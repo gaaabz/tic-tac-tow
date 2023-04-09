@@ -1,0 +1,29 @@
+.board {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex flex-col items-center justify-center gap-6;
+
+  &__title {
+    @apply text-2xl font-bold text-white;
+  }
+
+  &__winner {
+    span {
+      @apply bg-gray-900 rounded-2xl px-6 py-2 text-2xl font-bold text-white uppercase;
+    }
+  }
+
+  &__reset {
+    @apply bg-amber-300 rounded-2xl px-6 py-2 text-base font-bold text-black uppercase;
+  }
+
+  &__game {
+    @apply bg-white bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg items-center justify-center p-4 grid grid-cols-3 grid-rows-3 gap-4;
+  }
+
+  &__turn {
+    @apply text-2xl font-bold text-white;
+
+    span {
+      @apply uppercase;
+    }
+  }
+}
