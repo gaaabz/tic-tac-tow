@@ -40,7 +40,7 @@ const App = () => {
   }
 
   const updateBoard = (index) => {
-    if (board[index]) return
+    if (board[index] || boardMessage) return
 
     const newBoard = [...board]
     newBoard[index] = turn
